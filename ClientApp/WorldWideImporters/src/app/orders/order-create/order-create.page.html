@@ -1,9 +1,21 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="tertiary">
     <ion-title>order-create</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="order.name" placeholder="Enter Name"></ion-input>
+  </ion-item>
 
+  <ion-item>
+    <ion-label>Address</ion-label>
+    <ion-input [(ngModel)]="order.address" placeholder="Enter Address"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="submitForm()">Add</ion-button>
+  </ion-item>
 </ion-content>

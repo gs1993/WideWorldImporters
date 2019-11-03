@@ -57,9 +57,9 @@ export class OrdersService {
       )
   }
 
-  getList(): Observable<Order> {
+  getList(): Observable<Order[]> {
     return this.http
-      .get<Order>(this.base_path)
+      .get<Order[]>(this.base_path)
       .pipe(
         retry(2),
         catchError(this.handleError)
