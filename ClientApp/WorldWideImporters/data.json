@@ -15,5 +15,40 @@
       "name": "Harley Cremin",
       "address": "14855 Cathy Square"
     }
+  ],
+  "stockItems": [
+    {
+      "stockItemId": 1,
+      "name": "Test 1",
+      "color": "red",
+      "brand": "t1",
+      "size": "L",
+      "leadTimeDays": 13,
+      "taxRate": 12,
+      "price": 1234,
+      "retailPrice": 1322
+    },
+    {
+      "stockItemId": 2,
+      "name": "Test 2",
+      "color": "red",
+      "brand": "t2",
+      "size": "L",
+      "leadTimeDays": 3,
+      "taxRate": 11,
+      "price": 1234,
+      "retailPrice": 1382
+    },
+    {
+      "stockItemId": 3,
+      "name": "Test 3",
+      "color": "blue",
+      "brand": "t3",
+      "size": "S",
+      "leadTimeDays": 4,
+      "taxRate": 0,
+      "price": 1000,
+      "retailPrice": 1299
+    }
   ]
 }

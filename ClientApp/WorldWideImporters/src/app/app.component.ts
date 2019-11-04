@@ -20,6 +20,11 @@ export class AppComponent {
       title: 'Orders',
       url: '/order-list',
       icon: 'list'
+    },
+    {
+      title: 'Stock items',
+      url: '/stock-item-list',
+      icon: 'list'
     }
   ];
 
