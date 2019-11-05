@@ -19,7 +19,9 @@
   "stockItems": [
     {
       "stockItemId": 1,
-      "name": "Test 1",
+      "name": "USB missile launcher (Green)",
+      "category": "USB Novelties",
+      "marketingComment": "Complete with 12 projectiles",
       "color": "red",
       "brand": "t1",
       "size": "L",
@@ -30,7 +32,7 @@
     },
     {
       "stockItemId": 2,
-      "name": "Test 2",
+      "name": "USB food flash drive - dim sum 10 drive variety pack",
       "color": "red",
       "brand": "t2",
       "size": "L",
@@ -41,7 +43,9 @@
     },
     {
       "stockItemId": 3,
-      "name": "Test 3",
+      "name": "Developer joke mug - inheritance is the OO way to become wealthy (White)",
+      "category": "USB Novelties",
+      "marketingComment": "Suits child to 20 kg",
       "color": "blue",
       "brand": "t3",
       "size": "S",

@@ -7,34 +7,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Name</th>
-        <th scope="col">Address</th>
-        <th scope="col">Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of stockItems">
-        <td>{{ item.stockItemId }}</td>
-        <td>{{ item.name }}</td>
-        <td>{{ item.price }}</td>
-        <td style="display: flex">
-          <ion-button color="warning" size="small" routerLink='/edit/{{item.stockItemId}}'>
-            <ion-icon name="create"></ion-icon>
-          </ion-button>
-          <ion-button color="danger" size="small" (click)="delete(item)">
-            <ion-icon name="trash"></ion-icon>
-          </ion-button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of stockItems" size-xs="12" size-sm="6" size-md="4" size-lg="3" size-xl="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle style="font-size:0.8em">
+              {{ item.category }}
+            </ion-card-subtitle>
+            <ion-card-title style="font-size:1.1em">{{ item.name }}</ion-card-title>
+          </ion-card-header>
 
-  <ion-button [routerLink]="['/stock-item-create']">
-    Add Order
-  </ion-button>
+          <ion-item>
+            <ion-textarea>
+              {{ item.marketingComment }}
+            </ion-textarea>
+            <ion-icon name="alert" slot="start" color="danger"></ion-icon>
+            <ion-button fill="outline" slot="end" (click)="details(e)">Details</ion-button>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

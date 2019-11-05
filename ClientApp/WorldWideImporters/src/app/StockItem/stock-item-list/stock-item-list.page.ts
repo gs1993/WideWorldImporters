@@ -26,7 +26,6 @@ export class StockItemListPage implements OnInit {
     })
   }
 
-
   delete(item) {
     this.stockItemService.deleteItem(item.id).subscribe(Response => {
       //Update list after delete is successful
@@ -36,6 +35,4 @@ export class StockItemListPage implements OnInit {
         console.log(Response + ' | error: ' + error);
       });
   }
-
-
 }
